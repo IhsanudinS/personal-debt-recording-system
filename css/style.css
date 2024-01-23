@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap");
+/* Styling untuk Body */
+body {
+  font-family: "Comfortaa", sans-serif; /* Pilihan font untuk teks pada body */
+  background-color: #fff; /* Warna latar belakang body */
+  color: #34495e; /* Warna teks pada body */
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling untuk Form Hutang */
+#hutangForm {
+  max-width: 400px; /* Maksimum lebar form */
+  margin: 20px auto; /* Memberikan jarak margin di atas dan bawah form */
+  background-color: #d6f7e7ff; /* Warna latar belakang form */
+  padding: 15px;
+  border-radius: 10px; /* Sudut bulat pada form */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadow untuk efek elevasi form */
+  display: flex; /* Menggunakan Flexbox untuk tata letak */
+  flex-direction: column; /* Menetapkan tata letak menjadi kolom */
+}
+
+#hutangForm label {
+  font-weight: 600; /* Ketebalan teks label */
+}
+
+#hutangForm input {
+  width: 100%; /* Lebar input dan textarea 100% dari parentnya */
+  padding: 8px; /* Padding pada input dan textarea */
+  margin-bottom: 12px; /* Jarak antara input dan textarea */
+  border: 1px solid #5ae4a7ff; /* Garis tepi pada input dan textarea */
+  border-radius: 5px; /* Sudut bulat pada input dan textarea */
+}
+#hutangForm textarea {
+  width: 100%; /* Lebar input dan textarea 100% dari parentnya */
+  height: 55px;
+  padding: 8px; /* Padding pada input dan textarea */
+  margin-bottom: 12px; /* Jarak antara input dan textarea */
+  border: 1px solid #5ae4a7ff; /* Garis tepi pada input dan textarea */
+  border-radius: 5px; /* Sudut bulat pada input dan textarea */
+}
+
+/* Menambahkan class untuk mengatur tata letak tanggal secara sejajar */
+.date-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.illustration {
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling untuk Gambar Illustrasi */
+.illustration-container {
+  max-width: 400px; /* Maksimum lebar form */
+  margin: 20px auto;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px; /* Jarak antara gambar dan form */
+}
+
+@media (min-width: 768px) {
+  .illustration-container {
+    flex: 1; /* Gambar mengambil ruang seimbang dengan form */
+    margin-right: 20px; /* Jarak antara gambar dan form saat lebar layar lebih besar */
+  }
+
+  #hutangForm {
+    max-width: 400px; /* Tetapkan maksimum lebar form */
+    margin-right: auto; /* Meletakkan form di sebelah kiri */
+  }
+}
+
+#hutangForm .form-group {
+  margin-bottom: 1px;
+}
+
+#hutangForm button {
+  width: 100%; /* Lebar tombol submit 100% dari parentnya */
+  padding: 10px; /* Padding pada tombol submit */
+  border: none;
+  background-color: #04aa6d;
+  border-radius: 5px; /* Sudut bulat pada tombol submit */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transisi warna latar belakang tombol saat hover */
+}
+
+#hutangForm button:hover {
+  background-color: #028f5b; /* Green */
+  color: white;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #3498db; /* Warna latar belakang navbar */
+  padding: 10px; /* Padding pada navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow untuk efek elevasi */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Menempatkan navbar di atas konten */
+}
+
+.navbar-brand {
+  color: #fff; /* Warna teks untuk brand */
+  font-size: 24px; /* Ukuran teks brand */
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; /* Warna ikon toggle untuk kontras */
+}
+
+.navbar-nav {
+  text-align: right; /* Menu user diletakkan di pojok kanan */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 15px; /* Jarak antar menu */
+}
+
+.navbar-nav .nav-link {
+  color: #fff; /* Warna teks untuk menu */
+  font-weight: 500; /* Ketebalan teks menu */
+  transition: color 0.3s; /* Transisi warna saat hover */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ecf0f1; /* Warna teks saat hover */
+}
+
+/* Styling untuk Daftar Hutang pada Carousel */
+.daftar-hutang {
+  background-color: #ecf0f1; /* Warna latar belakang daftar hutang */
+  padding: 15px;
+  border-radius: 10px; /* Sudut bulat pada daftar hutang */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadow untuk efek elevasi daftar hutang */
+  margin-bottom: 20px; /* Jarak antar daftar hutang */
+}
+
+.bayar-button {
+  margin-top: 10px; /* Jarak antara daftar hutang dan tombol bayar */
+}
+
+/* Styling untuk Warna Status Hutang */
+.text-success {
+  color: #28a745; /* Warna hijau untuk lunas */
+}
+
+.text-danger {
+  color: #dc3545; /* Warna merah untuk belum lunas */
+}
+
+/* Styling untuk Warna Status Hutang 'Kurang' */
+.text-warning {
+  color: #ffc107; /* Warna kuning untuk status 'kurang' */
+}
+
+/* Style untuk modal login dan register */
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+/* Form style */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Tombol style */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+/* Styling untuk tautan forgot password */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Mengatur margin dan padding secara responsif */
+@media (max-width: 576px) {
+  .modal-content {
+    margin: 0;
+  }
+
+  .modal-body {
+    padding: 10px;
+  }
+}
+
+th {
+  background-color: #028f5b;
+  color: #fff;
+}
